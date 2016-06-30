@@ -1,0 +1,9 @@
+<form [ngFormModel]='membersForm' #f="ngForm" (submit)="addMember(f.value)">
+  <label>Name</label>
+  <input type="text" ngControl="name">
+  <label>Minerals</label>
+  <input type="text" ngControl="minerals">
+  <label>Vespene</label>
+  <input type="text" ngControl="vespene">
+  <button>Add</button>
+</form>

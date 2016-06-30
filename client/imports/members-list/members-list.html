@@ -1,0 +1,11 @@
+<div>
+  <members-form></members-form>
+  <ul>
+    <li *ngFor="let member of members">
+      <a [routerLink]="['/MemberDetails', {memberId: member._id}]">{{member.name}}</a>
+      <p>{{member.minerals}}</p>
+      <p>{{member.vespene}}</p>
+      <button (click)="removeMember(member)">X</button>
+    </li>
+  </ul>
+</div>
