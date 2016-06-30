@@ -1,3 +1,5 @@
 node_modules/
 typings/
 .c9/
+DS_STORE
+.meteor/local
